@@ -57,8 +57,8 @@ export default function Header() {
               <div className="flex justify-between items-center h-16 ">
                 <div className="item justify-center items-center ">
                   <img
-                    className="h-14 w-12 "
-                    src="/images/generales/subir.png"
+                    className="h-12 w-12 rounded-full"
+                    src="./ESCUELAS/logofiusac.jpg"
                     alt="Logo"
                   />
                 </div>
@@ -72,8 +72,8 @@ export default function Header() {
                       rel={item.enterFrom}
                       className={
                         hovered
-                          ? "bg-transparent text-white py-2 rounded-md text-sm font-medium "
-                          : "bg-transparent py-2 rounded-md text-sm text-black font-medium "
+                          ? "bg-transparent text-white py-2 rounded-md text-sm font-medium hover:text-gray-600 "
+                          : "bg-transparent py-2 rounded-md text-sm text-black font-medium hover:text-yellow-600 "
                       }
                       aria-current={item.current ? "page" : undefined}
                     >
@@ -89,14 +89,17 @@ export default function Header() {
                     {/* Icono para perfil */}
                   </button>
                 </div>
-                <div className="-mr-2 md:hidden  ">
+                <div className="-mr-2 md:hidden">
                   {/* Botón para menú móvil */}
-                  <Disclosure.Button className="bg-transparent inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                  <Disclosure.Button className="bg-transparent inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                     <span className="sr-only">Abrir menú principal</span>
                     {open ? (
                       <XIcon className="block h-6 w-6 " aria-hidden="true" />
                     ) : (
-                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                      <MenuIcon
+                        className="block h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     )}
                   </Disclosure.Button>
                 </div>
@@ -112,7 +115,7 @@ export default function Header() {
                     className={classNames(
                       item.current
                         ? "bg-transparent text-white"
-                        : "text-gray-300 hover:bg-transparent hover:text-white",
+                        : "text-black hover:bg-transparent hover:text-white",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.current ? "page" : undefined}

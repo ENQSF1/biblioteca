@@ -71,12 +71,9 @@ export default function Muestra() {
     <>
       <Head>
         <title>BIBLIOTECA || MUESTRA</title>
-        <meta
-          name="description"
-          content={`Conoce los candidatos del movimiento S.O.S USAC: `}
-        />
-        <meta property="og:image" content="/images/generales/coti.webp" />
-        <link rel="icon" href="/images/generales/cotiaro.ico" />
+        <meta name="description" content={`Muestra `} />
+        <meta property="og:image" content="./ESCUELAS/logofiusac.jpg" />
+        <link rel="icon" href="./ESCUELAS/logofiusac.jpg" />
       </Head>
       <div className=" min-h-screen ">
         <div
@@ -97,7 +94,7 @@ export default function Muestra() {
           </div>
         </div>
         <Particulasfondo fondo={particlesconfig} />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-2">
           {perro[0]?.cursos.map((curso) => (
             <Tarjeta key={curso.id} titulo={curso.nombre} link={curso.link} />
           ))}

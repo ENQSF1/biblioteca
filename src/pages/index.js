@@ -12,9 +12,9 @@ export default function index({ data }) {
       <div>
         <Head>
           <title>BIBLIOTECA</title>
-          <meta name="description" content="S.O.S USAC" />
-          <meta property="og:image" content="/images/generales/coti.webp" />
-          <link rel="icon" href="/images/generales/cotiaro.ico" />
+          <meta name="description" content="BIBLIOTECA" />
+          <meta property="og:image" content="./ESCUELAS/logofiusac.jpg" />
+          <link rel="icon" href="./ESCUELAS/logofiusac.jpg" />
         </Head>
 
         <main class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">

@@ -33,7 +33,7 @@ export default function Section({ escuela, id }) {
                   <Fade bottom>
                     <img
                       className="w-72 h-72 rounded-full p-2 "
-                      src="./ESCUELAS/mecanica.png"
+                      src="./ESCUELAS/logofiusac.jpg"
                       alt="Imagen Redonda"
                     />
                   </Fade>

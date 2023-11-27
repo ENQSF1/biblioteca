@@ -12,8 +12,8 @@ export default function Tarjeta({ titulo, link }) {
       }}
     >
       <img
-        className="w-40 h-40 object-cover rounded-full"
-        src="../ESCUELAS/mecanica.png"
+        className="w-32 h-32 object-cover rounded-full"
+        src="../ESCUELAS/logofiusac.jpg"
         alt="Imagen de la tarjeta"
       />
       <div className="px-6 py-4">
