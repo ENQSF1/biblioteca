@@ -2,7 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-import Fade from "react-reveal/Fade";
+
 const navigation = [
   { name: "INICIO", href: "/", current: false },
   { name: "CONTRIBUYE", href: "/Contacto", current: false },

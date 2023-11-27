@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Tarjeta({ titulo, link }) {
   return (
     <div
-      className="w-60 mx-auto bg-red-200 shadow-lg overflow-hidden flex items-center justify-center flex-col h-80"
+      className="w-60 mx-auto shadow-lg overflow-hidden flex items-center justify-center flex-col h-80"
       style={{
         backgroundImage: "url('../fondos/2.jpg')",
         backgroundSize: "cover",
