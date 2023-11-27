@@ -11,8 +11,8 @@ export default function ProductPage({ data }) {
           name="description"
           content={`Accede al material de ${data.carrera}`}
         />
-        <meta property="og:image" content="./ESCUELAS/logofiusac.jpg" />
-        <link rel="icon" href="./ESCUELAS/logofiusac.jpg" />
+        <meta property="og:image" content="..../ESCUELAS/logofiusac.jpg" />
+        <link rel="icon" href="..../ESCUELAS/logofiusac.jpg" />
       </Head>
       {data.cursos ? (
         <div className=" min-h-screen bg-black">

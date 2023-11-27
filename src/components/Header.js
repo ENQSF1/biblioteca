@@ -13,7 +13,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header() {
+export default function Header({ vacio }) {
   const [fixedNav, setFixedNav] = useState(false);
   const [hovered, setHovered] = useState(true);
 
@@ -56,11 +56,18 @@ export default function Header() {
             >
               <div className="flex justify-between items-center h-16 ">
                 <div className="item justify-center items-center ">
-                  <img
-                    className="h-12 w-12 rounded-full"
-                    src="./ESCUELAS/logofiusac.jpg"
-                    alt="Logo"
-                  />
+                  <Link href="/">
+                    {" "}
+                    <img
+                      className="h-12 w-12 rounded-full"
+                      src={
+                        vacio
+                          ? "../ESCUELAS/logofiusac.jpg"
+                          : "./ESCUELAS/logofiusac.jpg"
+                      }
+                      alt="Logo"
+                    />
+                  </Link>
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4 ml-auto ">
@@ -115,7 +122,7 @@ export default function Header() {
                     className={classNames(
                       item.current
                         ? "bg-transparent text-white"
-                        : "text-black hover:bg-transparent hover:text-white",
+                        : "text-black text-center hover:bg-transparent hover:text-white",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.current ? "page" : undefined}
