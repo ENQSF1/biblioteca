@@ -1,5 +1,4 @@
 import React from "react";
-
 import Footersection from "./Footersection";
 import Footer from "./handleFooter";
 import Header from "./Header";

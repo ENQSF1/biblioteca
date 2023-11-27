@@ -6,13 +6,13 @@ export default function ProductPage({ data }) {
   return (
     <>
       <Head>
-        <title>S.O.S USAC || candidatos || {data.nombre}</title>
+        <title>BIBLIOTECA || {data.carrera}</title>
         <meta
           name="description"
-          content={`Conoce los candidatos del movimiento S.O.S USAC: ${data.nombre}`}
+          content={`Accede al material de ${data.carrera}`}
         />
-        <meta property="og:image" content="/images/generales/coti.webp" />
-        <link rel="icon" href="/images/generales/cotiaro.ico" />
+        <meta property="og:image" content="./ESCUELAS/logofiusac.jpg" />
+        <link rel="icon" href="./ESCUELAS/logofiusac.jpg" />
       </Head>
       {data.cursos ? (
         <div className=" min-h-screen bg-black">
